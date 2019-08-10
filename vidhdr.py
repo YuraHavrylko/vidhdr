@@ -255,7 +255,7 @@ def what(fpath, buf=None):
     fd = None
     try:
         if buf is None:
-            if isinstance(fpath, basestring):
+            if isinstance(fpath, str):
                 fd = open(fpath, 'rb')
                 buf = fd.read(32)
             else:
